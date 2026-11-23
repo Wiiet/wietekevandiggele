@@ -52,8 +52,21 @@ description: "Vastgelopen, verzopen in je to-do's of op zoek naar een VA die kli
       <div class="choice">
         <p class="choice-if mb-0"><span>Als je</span>meer nodig hebt dan een uurtje</p>
         <p class="choice-then mb-0"><strong>Aanslingercall XXL of maatwerk</strong><span>We bouwen iets dat precies past</span></p>
-        <a class="btn btn-ink" href="{{ site.links.aanslingercallXXL }}" rel="noopener">Bekijk de XXL <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-disco" href="{{ site.links.aanslingercallXXL }}" rel="noopener">Bekijk de XXL <span class="arrow" aria-hidden="true">→</span></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-disco">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Reviews</p>
+      <h2>Ondernemen wordt weer een <span class="mark">feestje.</span></h2>
+    </div>
+    <div class="quotes quotes-2">
+      {% set r = reviews.omvallen %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.hanna %}{% set useShort = false %}{% include "partials/quote.njk" %}
     </div>
   </div>
 </section>
@@ -76,15 +89,3 @@ description: "Vastgelopen, verzopen in je to-do's of op zoek naar een VA die kli
   </div>
 </section>
 
-<section class="section bg-ink on-dark">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Reviews</p>
-      <h2>Ondernemen wordt weer een <span class="mark">feestje.</span></h2>
-    </div>
-    <div class="quotes quotes-2">
-      {% set r = reviews.omvallen %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.hanna %}{% set useShort = false %}{% include "partials/quote.njk" %}
-    </div>
-  </div>
-</section>

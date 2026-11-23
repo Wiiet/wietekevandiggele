@@ -72,6 +72,21 @@ footerLead: "Vul het formulier in of mail me je vraag. Dan ga ik vissen."
   </div>
 </section>
 
+<section class="section bg-disco">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Zij lieten zich matchen</p>
+      <h2>Hysterisch, retesnel <span class="mark">en bloedserieus.</span></h2>
+    </div>
+    <div class="quotes quotes-2">
+      {% set r = reviews.noortje %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.rosanne %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.hysterisch %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.match %}{% set useShort = false %}{% include "partials/quote.njk" %}
+    </div>
+  </div>
+</section>
+
 <section class="section bg-blush">
   <div class="wrap cards cards-2">
     <article class="card">
@@ -94,17 +109,3 @@ footerLead: "Vul het formulier in of mail me je vraag. Dan ga ik vissen."
   </div>
 </section>
 
-<section class="section bg-ink on-dark">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Zij lieten zich matchen</p>
-      <h2>Hysterisch, retesnel <span class="mark">en bloedserieus.</span></h2>
-    </div>
-    <div class="quotes quotes-2">
-      {% set r = reviews.noortje %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.rosanne %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.hysterisch %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.match %}{% set useShort = false %}{% include "partials/quote.njk" %}
-    </div>
-  </div>
-</section>

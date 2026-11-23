@@ -1,6 +1,6 @@
 <footer class="site-footer">
   {% if not hideFooterCta %}
-  <div class="footer-cta on-dark">
+  <div class="footer-cta">
     <div class="wrap footer-cta-grid">
       <div>
       <p class="eyebrow">Even kort</p>
@@ -11,8 +11,10 @@
         <a class="btn btn-ghost" href="{{ site.socials.instagram }}" rel="me noopener">DM me op Instagram</a>
       </div>
       </div>
-      <div class="photo photo-wide">
-        {% img "wiet-wijst", "Wiet in een roze pailletten-jasje wijst lachend naar jou", "(min-width: 960px) 40vw, 92vw" %}
+      <div class="photo-stack">
+        <div class="photo photo-wide">
+          {% img "wiet-wijst", "Wiet in een roze pailletten-jasje wijst lachend naar jou", "(min-width: 960px) 40vw, 92vw" %}
+        </div>
       </div>
     </div>
   </div>

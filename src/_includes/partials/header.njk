@@ -9,7 +9,7 @@
         {%- for item in nav %}
         <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
-        <li><a class="btn btn-small btn-ink" href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+        <li><a class="btn btn-compact" href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
       </ul>
     </nav>
   </div>
