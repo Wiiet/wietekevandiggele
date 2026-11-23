@@ -1,0 +1,167 @@
+---
+layout: layouts/base.njk
+permalink: /samenwerken/
+title: "Samenwerken met Wiet | Bloedje eerlijke reviews voor merken"
+ogTitle: "Bloedje eerlijke reviews. Daarom geloven ze me."
+description: "Influencer-samenwerking met Wieteke van Diggele: 17.349 volgers en 2,4 miljoen views per 30 dagen. Eerlijke reviews in één take, unboxings en video's voor je eigen kanalen."
+footerTitle: "Durf je het aan?"
+footerLead: "Stuur me een kort bericht met je merk, je product en wat je in gedachten hebt. Is het een match? Dan hoor je kneitersnel van me."
+footerMailLabel: "Mail over een samenwerking"
+footerMailSubject: "Samenwerking met Wiet"
+footerMailBody: |
+  Hoi Wiet!
+
+  Merk:
+  Product of dienst:
+  Wat heb je in gedachten? (review, unboxing, video voor onze eigen kanalen, iets anders):
+  Wanneer:
+  Budget (indicatie):
+
+  Groetjes,
+---
+{%- set brandMail = site.email | mailto(footerMailSubject, footerMailBody) -%}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Voor merken &amp; bureaus</p>
+      <h1>Bloedje eerlijke reviews. <span class="mark">Daarom geloven ze me.</span></h1>
+      <p class="lead">Ik ben je online bestie. Ik test je product in mijn eigen chaos, op camera, in één take. Werkt het? Dan schreeuw ik het van de daken. Is het troep? Dan zeg ik dat ook. Precies daarom kopen mijn volgers wat ik aanraad.</p>
+      <div class="btn-row">
+        <a class="btn" href="{{ brandMail }}">Plan een samenwerking <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#cijfers">Bekijk de cijfers <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="photo-stack">
+      <div class="photo">
+        {% img "wiet-discovloer", "Wiet zit lachend op de grond tussen discoballen en houdt een gouden glitterijsje omhoog", "(min-width: 960px) 42vw, 92vw", "eager" %}
+      </div>
+      <p class="badge badge-bl"><strong>{{ site.stats.followers }}</strong><span>volgers op Instagram</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-ink on-dark" id="cijfers">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="eyebrow">Mijn mediakit</p>
+        <h2>Cijfertjes in beeld</h2>
+      </div>
+      <p class="lead mb-0">Mijn volgers kijken niet voor de perfectie. Ze kijken voor de ongezouten mening, de humor en het sarcasme. En omdat ze mij vertrouwen, vertrouwen ze jouw merk sneller.</p>
+    </div>
+    <div class="stats">
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.followers }}</span><span class="stat-label">volgers op Instagram, en ze zijn bloedje fanatiek</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.views30d }}</span><span class="stat-label">views per 30 dagen</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.storyViews }}</span><span class="stat-label">kijkers per story</span></p>
+      <p class="stat mb-0"><span class="stat-num">4</span><span class="stat-label">kanalen: Instagram, TikTok, LinkedIn en Facebook</span></p>
+    </div>
+    <p class="stats-note">Peildatum: {{ site.stats.asOf }}. Wil je de screenshots uit mijn dashboard zien? Vraag ze gerust op.</p>
+
+    <div class="split-even mt-l">
+      <div>
+        <h3>Wie kijkt er?</h3>
+        <p class="mb-0 soft">Vooral vrouwen die, net als ik, houden van aanpakken en lachen. Ze prikken zo door neppe content heen. Dat hoeft ook niet: die maak ik niet. Ze kijken, ze reageren en ze kopen. Maar let op: mijn volgers zijn me dierbaar. Dat je het even weet.</p>
+        {#- TODO: leeftijd, man/vrouw-verdeling en top-steden uit Instagram Insights toevoegen -#}
+      </div>
+      <div>
+        <h3>Waar ik zit</h3>
+        <p class="mb-0 soft">Instagram is mijn thuisbasis. Op TikTok groei ik hard, op LinkedIn schijn ik een LinkedInfluencer te zijn, en Facebook neem ik ook mee. Ik plaats content op meerdere kanalen, gewoon omdat het kan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="eyebrow">Wat ik voor je maak</p>
+        <h2>Zo slinger ik jouw merk aan</h2>
+      </div>
+      <p class="lead mb-0">Heb je een product, dienst of plek die wel wat Wiet-juice kan gebruiken? Kom maar door. Maar let op: ik blijf wel mezelf.</p>
+    </div>
+    <div class="cards cards-3">
+      <article class="card">
+        <span class="pill">Mijn specialiteit</span>
+        <h3>De bloedje eerlijke review</h3>
+        <p>Ik test je spul in mijn eigen leven, direct op camera. In één take, alleen ingekort tot maximaal drie minuten. Geen script, wel een mening.</p>
+      </article>
+      <article class="card">
+        <span class="pill">Altijd raak</span>
+        <h3>Unboxing in één take</h3>
+        <p>Geen slow motion, geen perfect opgeruimde keuken. Gewoon: wat zit erin, en word ik er blij van? Je ziet het live gebeuren.</p>
+      </article>
+      <article class="card">
+        <span class="pill">Voor jouw socials</span>
+        <h3>Video voor je eigen kanalen</h3>
+        <p>Content die niet zo stijfjes is, voor jouw eigen socials. Ik maak 'm, jij post 'm, jij pakt de credits.</p>
+      </article>
+      <article class="card">
+        <span class="pill">Meetbaar</span>
+        <h3>Kortingscode of affiliate</h3>
+        <p>Met een eigen code, zoals <span class="code">WIETEKE</span>, zie je precies wat mijn volgers bij jou kopen. Geen giswerk, gewoon cijfers.</p>
+      </article>
+      <article class="card card-ink">
+        <span class="pill">Mijn geheime wapen</span>
+        <h3>Tools voor ondernemers</h3>
+        <p>Ik werk al ruim vijf jaar als VA en adviseur. Ik weet wat een tool moet kunnen, en mijn volgers weten dat ik dat weet. Ideaal voor software, apps en diensten voor zzp'ers.</p>
+      </article>
+      <article class="card">
+        <span class="pill">Iets anders?</span>
+        <h3>Gooi het in de groep</h3>
+        <p>Een event, een plek, een gekke actie? Vertel wat je in gedachten hebt. Als het bij me past, verzin ik er iets bij.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-ink on-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Spelregels</p>
+      <h2>Kort, want je hebt het druk</h2>
+    </div>
+    <div class="rules">
+      <div class="rule">
+        <h3>Ik blijf mezelf</h3>
+        <p>Je krijgt mijn woorden, mijn humor en mijn mening. Een briefing is welkom, een script niet. Dat zou zonde zijn van je geld.</p>
+      </div>
+      <div class="rule">
+        <h3>Eerlijk is eerlijk</h3>
+        <p>Werkt het? Dan schreeuw ik het van de daken. Is het troep? Dan zeg ik dat ook. Daarom geloven mijn volgers me als het wél goed is.</p>
+      </div>
+      <div class="rule">
+        <h3>Altijd herkenbaar</h3>
+        <p>Een samenwerking label ik als samenwerking. Netjes volgens de regels, en het kost je niks aan geloofwaardigheid.</p>
+      </div>
+      <div class="rule">
+        <h3>Pakketjes? Mag altijd</h3>
+        <p>Je mag me zomaar iets opsturen. Verwacht alleen niet dat ik erover post als we niets hebben afgesproken. ;)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="eyebrow">Bekijk mijn werk</p>
+        <h2>Zo ziet dat eruit</h2>
+      </div>
+      <p class="lead mb-0">Echte reviews, echte unboxings, echte chaos. Scroll even door mijn Instagram en je weet precies wat je krijgt.</p>
+    </div>
+    {% include "partials/insta-feed.njk" %}
+
+    <div class="mt-l">
+      <h3>Al eerder met Wiet aan de slag</h3>
+      {#- TODO: controleren met Wiet welke merken hier mogen staan -#}
+      <ul class="chips mt-s">
+        <li>Achaté</li>
+        <li>Moov</li>
+        <li>BookBeat</li>
+      </ul>
+    </div>
+  </div>
+</section>

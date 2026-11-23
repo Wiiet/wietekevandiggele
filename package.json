@@ -1,0 +1,17 @@
+{
+  "name": "wietekevandiggele-nl",
+  "version": "1.0.0",
+  "description": "Website van Wieteke van Diggele",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

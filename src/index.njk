@@ -1,0 +1,191 @@
+---
+layout: layouts/base.njk
+title: "Wieteke van Diggele | Online bestie, business-adviseur en VA"
+ogTitle: "Ik ben Wiet. En ik vind er wat van."
+description: "Ik ben Wiet: online bestie voor 17.000+ volgers en business-bestie voor ondernemers. Bloedje eerlijke reviews voor merken, Aanslingercalls, VA-werk en VA-matchmaking."
+schema:
+  "@context": "https://schema.org"
+  "@type": "Person"
+  name: "Wieteke van Diggele"
+  alternateName: "Wiet"
+  url: "https://www.wietekevandiggele.nl/"
+  image: "https://www.wietekevandiggele.nl/assets/img/og-wiet.jpg"
+  jobTitle: "Influencer, online business adviseur en Virtual Assistant"
+  email: "mailto:vuur@wietekevandiggele.nl"
+  sameAs:
+    - "https://www.instagram.com/wietekevandiggele/"
+    - "https://www.linkedin.com/in/wietekevandiggele/"
+    - "https://www.facebook.com/wietekevdiggele"
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Online bestie · Business-bestie</p>
+      <h1 class="h1-xl">Ik ben Wiet. En ik vind er <span class="mark">wat van.</span></h1>
+      <p class="lead">Over jouw product, over jouw bedrijf en over die VA die maar niet komt opdagen. Bloedje eerlijk, met een knipoog. Er wat van vinden kan iedereen. Ik doe er ook wat aan.</p>
+      <div class="btn-row">
+        <a class="btn" href="/samenwerken/">Ik ben een merk <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="/werken-met-wiet/">Ik ben ondernemer <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="photo-stack">
+      <div class="photo">
+        {% img "wiet-croc", "Wiet in een roze ronde nis, met een glitter-Croc in de hand en een blik van: ik vind er wat van", "(min-width: 960px) 42vw, 92vw", "eager" %}
+      </div>
+      <p class="badge badge-bl"><strong>{{ site.stats.views30d }}</strong><span>views per 30 dagen</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {%- for n in [1, 2] %}
+    <ul>
+      <li>Bloedje eerlijk</li>
+      <li>Niet lullen maar poetsen</li>
+      <li>Geen gelikte plaatjes</li>
+      <li>Crocs aan, discobal in de hand</li>
+      <li>Wiet vindt er wat van</li>
+      <li>En doet er wat aan</li>
+    </ul>
+    {%- endfor %}
+  </div>
+</div>
+
+<section class="section-tight">
+  <div class="wrap">
+    <h2 class="visually-hidden">Wiet in cijfers</h2>
+    <div class="stats">
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.followers }}</span><span class="stat-label">volgers op Instagram</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.views30d }}</span><span class="stat-label">views per 30 dagen</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.storyViews }}</span><span class="stat-label">kijkers per story</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.yearsOnline }} jaar</span><span class="stat-label">in de online business-wereld</span></p>
+    </div>
+    <p class="stats-note">Peildatum: {{ site.stats.asOf }}.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kies je deur</p>
+      <h2>Waar mag ik iets van vinden?</h2>
+    </div>
+    <div class="doors">
+      <a class="door door-ink" href="/samenwerken/">
+        <div>
+          <p class="door-tag">Voor merken</p>
+          <h3>Bloedje eerlijke reviews die wél verkopen.</h3>
+          <p>Geen glossy plaatje dat na twee seconden wordt weggeswiped. Ik test je product in mijn eigen chaos, in één take, en zeg precies wat ik ervan vind. Daarom geloven mijn volgers me als ik zeg dat iets goed is.</p>
+        </div>
+        <span class="btn fake-btn">Bekijk mijn mediakit <span class="arrow" aria-hidden="true">→</span></span>
+        <img class="door-ball" src="/assets/img/discobal.svg" alt="" width="240" height="240">
+      </a>
+      <a class="door door-pink" href="/werken-met-wiet/">
+        <div>
+          <p class="door-tag">Voor ondernemers</p>
+          <h3>Een business-bestie die er ook wat aan doet.</h3>
+          <p>Vastgelopen, verzopen in je to-do's of al drie keer een VA-oproep gedaan? Ik zie snel waar het wringt. En dan fix ik het, of ik vind iemand die het fixt.</p>
+        </div>
+        <span class="btn btn-ink fake-btn">Bekijk wat ik doe <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="eyebrow">Voor ondernemers</p>
+        <h2>Wiet in je bedrijf. Kies maar.</h2>
+      </div>
+      <p class="lead mb-0">Geen traject van maanden. Je pakt wat je nodig hebt, en daarna laat ik je weer los. Hop-on, hop-off.</p>
+    </div>
+    <div class="cards cards-3">
+      <article class="card">
+        <span class="pill">Je zit vast</span>
+        <h3>Aanslingercall</h3>
+        <p>Eén uur, scherpe vragen en keiharde eerlijkheid. Je gaat weg met een plan waar je de volgende ochtend mee aan de slag kunt.</p>
+        <div class="card-foot">
+          <p class="price mb-0">{{ site.prices.aanslingercall }}<small>ex btw</small></p>
+          <a class="link-arrow" href="/aanslingeren/">Sla je dip aan Diggele <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="pill">Je verzuipt in je to-do's</span>
+        <h3>Wiet als VA</h3>
+        <p>Klantenservice, automations, betaalpagina's, je online academie: ik run je back-end alsof het mijn eigen toko is. En ik zeg er gratis bij wat slimmer kan.</p>
+        <div class="card-foot">
+          <p class="price mb-0">{{ site.prices.va }}<small>per uur ex btw</small></p>
+          <a class="link-arrow" href="/wiet-als-va/">Gooi het over de schutting <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="pill">Je zoekt hulp die klikt</span>
+        <h3>VA Matchmaking</h3>
+        <p>Geen veertig reacties op je oproep, maar één naam die past. Ik vis 'm uit mijn visvijver vol Virtuele Aanpakkers.</p>
+        <div class="card-foot">
+          <p class="price mb-0">{{ site.prices.matchmaking }}<small>ex btw, op aanvraag</small></p>
+          <a class="link-arrow" href="/va-matchmaking/">Laat mij vissen <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-ink on-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Reviews</p>
+      <h2>Zeiden zij. <span class="mark">Niet ik.</span></h2>
+    </div>
+    <div class="quotes">
+      {% set r = reviews.schop %}{% set big = false %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.bianca %}{% set useShort = true %}{% include "partials/quote.njk" %}
+      {% set r = reviews.rosanne %}{% set useShort = true %}{% include "partials/quote.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="eyebrow">Online bestie</p>
+        <h2>Elke dag een mening. Gratis.</h2>
+      </div>
+      <p class="lead mb-0">Op Instagram ben ik je online bestie: eerlijke reviews, tips voor ondernemers en het echte leven, zonder filter.</p>
+    </div>
+    {% include "partials/insta-feed.njk" %}
+  </div>
+</section>
+
+<section class="section-tight bg-rasp">
+  <div class="wrap split-even">
+    <div>
+      <p class="eyebrow">Gratis scan</p>
+      <h2 class="mb-0">Sippie, of business-dippie?</h2>
+    </div>
+    <div>
+      <p class="lead">Moe, de weg kwijt, of gewoon geen zin meer? Doe de gratis scan en ontdek welke dip jij hebt: energie, strategie, executie of plezier. Je diagnose en drie eerste stappen krijg je in je mail.</p>
+      <a class="btn btn-white" href="{{ site.links.dipTest }}" rel="noopener">Doe de gratis scan <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="photo">
+      {% img "wiet-lach", "Wiet lacht in de camera, met een rood jasje en roze veren", "(min-width: 960px) 38vw, 92vw" %}
+    </div>
+    <div>
+      <p class="eyebrow">Over Wiet</p>
+      <h2>Halve Rotterdamse. Hele mond.</h2>
+      <p class="lead">Ik ben Wieteke, maar zeg maar Wiet. Anders denk ik dat je boos op me bent.</p>
+      <p class="maxw">Ondernemerscoach, Virtual Assistant, VA-matchmaker en online bestie. Die combinatie is mijn geheime wapen: ik zie niet alleen wát er wringt, ik weet ook hóe je het fixt. Ik hou van roze, Crocs en discoballen, en van mensen die gewoon gaan.</p>
+      <a class="link-arrow mt-s" href="/over-wiet/">Meer over Wiet <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>

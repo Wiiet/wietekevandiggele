@@ -1,0 +1,110 @@
+---
+layout: layouts/base.njk
+permalink: /va-matchmaking/
+title: "VA Matchmaking | Vind de Virtual Assistant die écht bij je past"
+ogTitle: "Eén VA die klikt. Geen veertig reacties."
+description: "Geen tijd om zelf een Virtual Assistant te zoeken? Wieteke van Diggele vist de VA, OBM of Virtuele Aanpakker die bij je past uit een visvijver vol talent. VA Matchmaking voor €399 ex btw."
+footerTitle: "Hengel uit handen?"
+footerLead: "Vul het formulier in of mail me je vraag. Dan ga ik vissen."
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Wiet als VA-matchmaker · op aanvraag</p>
+      <h1>Eén VA die klikt. <span class="mark">Geen veertig reacties.</span></h1>
+      <p class="lead">Je hebt al drie keer een oproep gedaan, veertig reacties gekregen en nog steeds niemand die past. Of erger: wél iemand, die na twee weken afhaakte. Ik ken de VA-wereld als mijn broekzak. Jij vertelt wat je nodig hebt, ik hoor ook wat je níet zegt, en jij krijgt één naam die klikt.</p>
+      <div class="btn-row">
+        <a class="btn" href="{{ site.links.matchmakingForm }}" rel="noopener">Match mij ook <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#hoe">Hoe werkt het? <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+      <p class="btn-note">{{ site.prices.matchmaking }} ex btw · je start met een kort formulier</p>
+    </div>
+    <div class="photo-stack">
+      <div class="photo">
+        {% img "wiet-hengel", "Wiet in gele regenjas en rode tulerok, met een hengel naast een opblaasbadje", "(min-width: 960px) 42vw, 92vw", "eager" %}
+      </div>
+      <p class="badge badge-bl"><strong>1</strong><span>naam die klikt</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush">
+  <div class="wrap split-even">
+    <div>
+      <p class="eyebrow">Stop met alles zelf doen, joh</p>
+      <h2>Skills zijn leuk. Klik is goud.</h2>
+    </div>
+    <div>
+      <p class="lead">Iedereen lijkt z'n shit op orde te hebben, terwijl jij half jankend boven je Trello-bord hangt: "Ja maar waar vind ik zo'n VA dan?!"</p>
+      <p class="maxw">Je hebt de tijd niet om de zoveelste Insta-VA te screenen op hun Canva-posts. Hoeft ook niet. Ik prik door je verhaal heen, hoor wat je níet zegt en vind de VA, OBM of Virtuele Aanpakker die jouw tempo aankan, tussen je kromme zinnen door snapt wat je bedoelt en je bedrijf net zo serieus neemt als jij.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="hoe">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Hoe het werkt</p>
+      <h2>Jij achterover. Ik aan de hengel.</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <h3>Jij vult het formulier in</h3>
+        <p>Vertel wat je nodig hebt. Rommelig mag: ik lees tussen de regels door.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <h3>Ik ga vissen</h3>
+        <p>Ik vraag door tot ik snap wat je écht nodig hebt, en duik dan in mijn visvijver vol Virtuele Aanpakkers.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <h3>Jij krijgt je match</h3>
+        <p>Een kant-en-klare match in je inbox. Geen ontplofte inbox na een Insta-oproep, wel een sidekick die blijft.</p>
+      </li>
+    </ol>
+    <div class="btn-row mt-m">
+      <a class="btn" href="{{ site.links.matchmakingForm }}" rel="noopener">Match mij ook <span class="arrow" aria-hidden="true">→</span></a>
+      <span class="muted">{{ site.prices.matchmaking }} ex btw</span>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blush">
+  <div class="wrap cards cards-2">
+    <article class="card">
+      <span class="pill">Bel me als je</span>
+      <ul class="disco-list mb-0">
+        <li>groeit als een malle en het niet meer alleen redt</li>
+        <li>geen zin hebt om VA's op LinkedIn te stalken</li>
+        <li>iemand zoekt die snapt wat je bedoelt, ook als je het zelf nog niet helemaal weet</li>
+        <li>blij wordt van duidelijke communicatie, lol en tempo</li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="pill">Bel me niet als je</span>
+      <ul class="x-list">
+        <li>alles tot in detail hebt uitgedacht en een VA zoekt die je lijstje klakkeloos uitvoert</li>
+        <li>een uurtarief onder de €45 verwacht en denkt dat je daar de hele wereld voor koopt</li>
+        <li>niet tegen een grapje kunt (dan ben ik sowieso niet jouw match)</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section bg-ink on-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Zij lieten zich matchen</p>
+      <h2>Hysterisch, retesnel <span class="mark">en bloedserieus.</span></h2>
+    </div>
+    <div class="quotes quotes-2">
+      {% set r = reviews.noortje %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.rosanne %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.hysterisch %}{% set useShort = false %}{% include "partials/quote.njk" %}
+      {% set r = reviews.match %}{% set useShort = false %}{% include "partials/quote.njk" %}
+    </div>
+  </div>
+</section>

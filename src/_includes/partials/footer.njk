@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  {% if not hideFooterCta %}
+  <div class="footer-cta on-dark">
+    <div class="wrap footer-cta-grid">
+      <div>
+      <p class="eyebrow">Even kort</p>
+      <h2>{{ footerTitle or "Durf je het aan?" }}</h2>
+      <p class="lead">{{ footerLead or "Stuur me een berichtje. Kort mag, rommelig ook. Is het een match? Dan hoor je kneitersnel van me." }}</p>
+      <div class="btn-row">
+        <a class="btn" href="{{ site.email | mailto(footerMailSubject or 'Hoi Wiet!', footerMailBody or '') }}">{{ footerMailLabel or "Mail Wiet" }} <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="{{ site.socials.instagram }}" rel="me noopener">DM me op Instagram</a>
+      </div>
+      </div>
+      <div class="photo photo-wide">
+        {% img "wiet-wijst", "Wiet in een roze pailletten-jasje wijst lachend naar jou", "(min-width: 960px) 40vw, 92vw" %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-logo">Wiet<img class="logo-ball" src="/assets/img/discobal.svg" alt="" width="48" height="48"></p>
+        <p class="mb-0">Online bestie, business-bestie en Virtual Assistant. Bloedje eerlijk sinds de eerste Croc.</p>
+      </div>
+      <div>
+        <h4>Werken met Wiet</h4>
+        <ul>
+          <li><a href="/samenwerken/">Samenwerken als merk</a></li>
+          <li><a href="/aanslingeren/">Aanslingercall</a></li>
+          <li><a href="/wiet-als-va/">Wiet als VA</a></li>
+          <li><a href="/va-matchmaking/">VA Matchmaking</a></li>
+          <li><a href="/favorieten/">Wiet's Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Volg Wiet</h4>
+        <ul>
+          <li><a href="{{ site.socials.instagram }}" rel="me noopener">Instagram</a></li>
+          {% if site.socials.tiktok %}<li><a href="{{ site.socials.tiktok }}" rel="me noopener">TikTok</a></li>{% endif %}
+          <li><a href="{{ site.socials.linkedin }}" rel="me noopener">LinkedIn</a></li>
+          <li><a href="{{ site.socials.facebook }}" rel="me noopener">Facebook</a></li>
+          <li><a href="{{ site.links.newsletter }}" rel="noopener">Onregelmatige Nieuwsbrief</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>{{ site.name }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>KvK {{ site.kvk }}</li>
+          <li>Btw {{ site.btw }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="mb-0">© {{ site.since }}–2026 {{ site.name }}</p>
+      <ul>
+        <li><a href="/assets/files/privacyverklaring.pdf">Privacyverklaring</a></li>
+        <li><a href="/assets/files/algemene-voorwaarden.pdf">Algemene voorwaarden</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

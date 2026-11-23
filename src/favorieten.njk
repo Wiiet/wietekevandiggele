@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+permalink: /favorieten/
+title: "Wiet's Shop | Spullen waar ik heul gelukkig van word"
+description: "Wiet's favoriete spullen voor huishouden, keuken en je bedrijf. Alles zelf gebruikt en eerlijk beoordeeld, met kortingscodes."
+footerTitle: "Jouw product hier?"
+footerLead: "Heb je iets waar ik heul gelukkig van zou kunnen worden? Laat me het testen. Eerlijk, zoals altijd."
+footerMailLabel: "Mail over een samenwerking"
+footerMailSubject: "Samenwerking met Wiet"
+---
+
+<section class="hero" style="padding-bottom: clamp(40px, 6vw, 72px)">
+  <div class="wrap">
+    <p class="eyebrow">Wiet's Shop</p>
+    <h1>Spullen waar ik <span class="mark">heul gelukkig</span> van word.</h1>
+    <p class="lead">Alles op deze pagina gebruik ik zelf, of heb ik gebruikt. Eerlijk getest, net als op Instagram.</p>
+    <p class="note maxw mt-m mb-0"><strong>Wat is een affiliate-link?</strong> Koop je iets via mijn link, dan krijg ik een klein beetje commissie. Jij merkt er niks van, maar je maakt wel jezelf én mij blij.</p>
+  </div>
+</section>
+
+{% for group in shop %}
+<section class="section-tight{% if loop.index is odd %} bg-blush{% endif %}">
+  <div class="wrap">
+    <h2>{{ group.title }}</h2>
+    <div class="products mt-m">
+      {% for item in group.items %}
+      <article class="product">
+        {% if item.img %}
+        <div class="product-img"><img src="/assets/img/shop/{{ item.img }}.webp" alt="{{ item.name }}" loading="lazy" decoding="async"></div>
+        {% endif %}
+        <div class="product-body">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.text }}</p>
+          <a class="link-arrow" href="{{ affiliate[item.link] }}" rel="sponsored noopener">Bekijk bij {{ item.shop }} <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}

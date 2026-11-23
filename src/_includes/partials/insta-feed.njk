@@ -1,0 +1,18 @@
+{#- Live Instagram-feed. Zonder feed-URL (site.instagramFeedUrl) blijft het 'Volg mij'-blok staan. -#}
+<div class="insta" data-insta{% if site.instagramFeedUrl %} data-feed-url="{{ site.instagramFeedUrl }}"{% endif %}>
+  <div class="feed feed-fallback" data-feed>
+    <a class="feed-item" href="{{ site.socials.instagram }}" rel="noopener">
+      {% img "wiet-discoballen", "Wiet in een roze cirkel met twee discoballen", "(min-width: 720px) 30vw, 50vw" %}
+    </a>
+    <a class="feed-item" href="{{ site.socials.instagram }}" rel="noopener">
+      {% img "wiet-liggend", "Wiet ligt lachend in een roze cirkel met een glitterijsje", "(min-width: 720px) 30vw, 50vw" %}
+    </a>
+    <a class="feed-item" href="{{ site.socials.instagram }}" rel="noopener">
+      {% img "wiet-hengel", "Wiet in gele regenjas met een hengel naast een opblaasbadje", "(min-width: 720px) 30vw, 50vw" %}
+    </a>
+  </div>
+  <div class="feed-foot">
+    <p class="mb-0 muted" data-feed-note>Tips, bloedje eerlijke reviews en af en toe een slechte grap. Elke dag op {{ site.socials.instagramHandle }}.</p>
+    <a class="btn btn-ink" href="{{ site.socials.instagram }}" rel="noopener">Volg {{ site.socials.instagramHandle }} <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+---
+layout: layouts/base.njk
+permalink: /contact/
+title: "Contact | Wiet"
+description: "Mail, DM of plan direct een kennismaking met Wieteke van Diggele. Voor samenwerkingen met merken, advies, VA-werk en VA-matchmaking."
+hideFooterCta: true
+brandMailBody: |
+  Hoi Wiet!
+
+  Merk:
+  Product of dienst:
+  Wat heb je in gedachten? (review, unboxing, video voor onze eigen kanalen, iets anders):
+  Wanneer:
+  Budget (indicatie):
+
+  Groetjes,
+---
+
+<section class="hero" style="padding-bottom: clamp(40px, 6vw, 72px)">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Gooi het maar <span class="mark">naar me toe.</span></h1>
+      <p class="lead">Brandende vragen? Een samenwerking? Goede grapjes? Stuur het op, dan belandt het vanzelf in mijn digitale gleuf.</p>
+    </div>
+    <div class="photo-stack">
+      <div class="photo photo-wide">
+        {% img "wiet-wijst", "Wiet in een roze pailletten-jasje wijst lachend naar jou", "(min-width: 960px) 42vw, 92vw", "eager" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight bg-blush">
+  <div class="wrap contact-grid">
+    <article class="card card-ink">
+      <span class="pill">Mail me</span>
+      <div class="copy-row">
+        <code>{{ site.email }}</code>
+        <button class="btn btn-white copy-btn" type="button" data-copy="{{ site.email }}" hidden>Kopieer</button>
+      </div>
+      <p>Kort mag, rommelig ook. Ik reageer zo snel als mijn Crocs me dragen.</p>
+      <div class="card-foot">
+        <a class="btn" href="{{ site.email | mailto('Hoi Wiet!') }}">Open je mail <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card">
+      <span class="pill">Merk of bureau?</span>
+      <h3>Samenwerken</h3>
+      <p>Vertel kort wie je bent, wat je product is en wat je in gedachten hebt. Ik zet alvast een lijstje voor je klaar in de mail.</p>
+      <div class="card-foot">
+        <a class="btn btn-ink" href="{{ site.email | mailto('Samenwerking met Wiet', brandMailBody) }}">Mail over een samenwerking <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="link-arrow" href="/samenwerken/">Eerst de mediakit bekijken <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card">
+      <span class="pill">Ondernemer?</span>
+      <h3>Plan een kennismaking</h3>
+      <p>Wil je weten of ik jouw VA kan zijn? Prik direct een moment in mijn agenda.</p>
+      <div class="card-foot">
+        <a class="btn btn-ink" href="{{ site.links.vaKennismaking }}" rel="noopener">Plan een kennismaking <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="link-arrow" href="/werken-met-wiet/">Of kijk wat bij je past <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card">
+      <span class="pill">Liever een DM?</span>
+      <h3>Instagram</h3>
+      <p>Daar hang ik toch al de hele dag rond. Stuur een berichtje naar {{ site.socials.instagramHandle }}.</p>
+      <div class="card-foot">
+        <a class="btn btn-ink" href="{{ site.socials.instagram }}" rel="noopener">Stuur een DM <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+{% if site.web3formsKey %}
+<section class="section">
+  <div class="wrap narrow">
+    <h2>Of vul dit in</h2>
+    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="{{ site.web3formsKey }}">
+      <input type="hidden" name="subject" value="Nieuw bericht via wietekevandiggele.nl">
+      <input type="hidden" name="redirect" value="{{ site.url }}/contact/bedankt/">
+      <div class="form-row">
+        <label>Naam <input name="naam" autocomplete="name" required></label>
+        <label>E-mail <input type="email" name="email" autocomplete="email" required></label>
+      </div>
+      <label>Wat kan ik voor je doen? <textarea name="bericht" required></textarea></label>
+      <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off">
+      <button class="btn" type="submit">Verstuur <span class="arrow" aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap split-even">
+    <div>
+      <p class="eyebrow">De Onregelmatige Nieuwsbrief</p>
+      <h2>Je ziet vanzelf wel wanneer hij komt.</h2>
+      <p class="lead">Altijd een verrassing. Schrijf je in en mis niks van wat ik ergens van vind.</p>
+      <a class="btn" href="{{ site.links.newsletter }}" rel="noopener">Schrijf je in <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="card">
+      <h3>Zakelijke gegevens</h3>
+      <p class="mb-0">{{ site.name }}<br>KvK {{ site.kvk }}<br>Btw {{ site.btw }}<br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
+  </div>
+</section>

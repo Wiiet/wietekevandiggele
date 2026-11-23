@@ -1,0 +1,16 @@
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="logo" href="/" aria-label="Wiet, naar de homepage">Wiet<img class="logo-ball" src="/assets/img/discobal.svg" alt="" width="48" height="48"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-nav-toggle>
+      <span class="nav-toggle-lines" aria-hidden="true"></span><span data-nav-label>Menu</span>
+    </button>
+    <nav id="nav" class="nav" aria-label="Hoofdmenu" data-nav>
+      <ul>
+        {%- for item in nav %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+        <li><a class="btn btn-small" href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,4 @@
+<figure class="quote{% if big %} quote-big{% endif %}">
+  <blockquote><p class="mb-0">{{ (r.short if useShort and r.short else r.text) }}</p></blockquote>
+  <figcaption><strong>{{ r.name }}</strong>{{ r.source }}</figcaption>
+</figure>
