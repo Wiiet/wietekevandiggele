@@ -20,7 +20,7 @@ export default {
 
   prices: {
     aanslingercall: "€150",
-    va: "€75",
+    va: "€80",
     matchmaking: "€399",
   },
 
