@@ -14,7 +14,7 @@ export default {
     followers: "17.349",
     views30d: "2,4 mln",
     storyViews: "4.000+",
-    yearsOnline: "5+",
+    jarenOndernemer: "7",
     asOf: "november 2026",
   },
 

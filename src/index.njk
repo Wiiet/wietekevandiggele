@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: "Wieteke van Diggele | Online bestie, business-adviseur en VA"
 ogTitle: "Ik ben Wiet. En ik vind er wat van."
-description: "Ik ben Wiet: online bestie voor 17.000+ volgers en business-bestie voor ondernemers. Bloedje eerlijke reviews voor merken, Aanslingercalls, VA-werk en VA-matchmaking."
+description: "Ik ben Wiet: online bestie voor 17.000+ volgers en business-bestie voor ondernemers. Bloedje eerlijke reviews voor merken, Aanslingercalls, VA- en OBM-werk en VA-matchmaking."
 schema:
   "@context": "https://schema.org"
   "@type": "Person"
@@ -33,7 +33,7 @@ schema:
       <div class="photo">
         {% img "wiet-croc", "Wiet in een roze ronde nis, met een glitter-Croc in de hand en een blik van: ik vind er wat van", "(min-width: 960px) 42vw, 92vw", "eager" %}
       </div>
-      <p class="badge badge-bl"><strong>{{ site.stats.views30d }}</strong><span>views per 30 dagen</span></p>
+      <p class="badge badge-bl"><strong>{{ site.stats.views30d }}</strong> <span>views per 30 dagen</span></p>
     </div>
   </div>
 </section>
@@ -57,10 +57,10 @@ schema:
   <div class="wrap">
     <h2 class="visually-hidden">Wiet in cijfers</h2>
     <div class="stats">
-      <p class="stat mb-0"><span class="stat-num">{{ site.stats.followers }}</span><span class="stat-label">volgers op Instagram</span></p>
-      <p class="stat mb-0"><span class="stat-num">{{ site.stats.views30d }}</span><span class="stat-label">views per 30 dagen</span></p>
-      <p class="stat mb-0"><span class="stat-num">{{ site.stats.storyViews }}</span><span class="stat-label">kijkers per story</span></p>
-      <p class="stat mb-0"><span class="stat-num">{{ site.stats.yearsOnline }} jaar</span><span class="stat-label">in de online business-wereld</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.followers }}</span> <span class="stat-label">volgers op Instagram</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.views30d }}</span> <span class="stat-label">views per 30 dagen</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.storyViews }}</span> <span class="stat-label">kijkers per story</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.jarenOndernemer }} jaar</span> <span class="stat-label">ondernemer</span></p>
     </div>
     <p class="stats-note">Peildatum: {{ site.stats.asOf }}.</p>
   </div>
@@ -101,7 +101,7 @@ schema:
         <p class="eyebrow">Voor ondernemers</p>
         <h2>Wiet in je bedrijf. Kies maar.</h2>
       </div>
-      <p class="lead mb-0">Geen traject van maanden. Je pakt wat je nodig hebt, en daarna laat ik je weer los. Hop-on, hop-off.</p>
+      <p class="lead mb-0">Geen traject van maanden: je pakt wat je nodig hebt.</p>
     </div>
     <div class="cards cards-3">
       <article class="card">
@@ -109,7 +109,7 @@ schema:
         <h3>Aanslingercall</h3>
         <p>Eén uur, scherpe vragen en keiharde eerlijkheid. Je gaat weg met een plan waar je de volgende ochtend mee aan de slag kunt.</p>
         <div class="card-foot">
-          <p class="price mb-0">{{ site.prices.aanslingercall }}<small>ex btw</small></p>
+          <p class="price mb-0">{{ site.prices.aanslingercall }} <small>ex btw</small></p>
           <a class="link-arrow" href="/aanslingeren/">Sla je dip aan Diggele <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </article>
@@ -118,7 +118,7 @@ schema:
         <h3>Wiet als VA</h3>
         <p>Klantenservice, automations, betaalpagina's, je online academie: ik run je back-end alsof het mijn eigen toko is. En ik zeg er gratis bij wat slimmer kan.</p>
         <div class="card-foot">
-          <p class="price mb-0">{{ site.prices.va }}<small>per uur ex btw</small></p>
+          <p class="price mb-0">{{ site.prices.va }} <small>per uur ex btw</small></p>
           <a class="link-arrow" href="/wiet-als-va/">Gooi het over de schutting <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </article>
@@ -127,7 +127,7 @@ schema:
         <h3>VA Matchmaking</h3>
         <p>Geen veertig reacties op je oproep, maar één naam die past. Ik vis 'm uit mijn visvijver vol Virtuele Aanpakkers.</p>
         <div class="card-foot">
-          <p class="price mb-0">{{ site.prices.matchmaking }}<small>ex btw, op aanvraag</small></p>
+          <p class="price mb-0">{{ site.prices.matchmaking }} <small>ex btw, op aanvraag</small></p>
           <a class="link-arrow" href="/va-matchmaking/">Laat mij vissen <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </article>
@@ -182,9 +182,9 @@ schema:
     </div>
     <div>
       <p class="eyebrow">Over Wiet</p>
-      <h2>Halve Rotterdamse. Hele mond.</h2>
+      <h2>Direct. Zonder filter.</h2>
       <p class="lead">Ik ben Wieteke, maar zeg maar Wiet. Anders denk ik dat je boos op me bent.</p>
-      <p class="maxw">Ondernemerscoach, Virtual Assistant, VA-matchmaker en online bestie. Die combinatie is mijn geheime wapen: ik zie niet alleen wát er wringt, ik weet ook hóe je het fixt. Ik hou van roze, Crocs en discoballen, en van mensen die gewoon gaan.</p>
+      <p class="maxw">Je business-bestie als Virtual Assistant of Online Business Manager, en op aanvraag VA-matchmaker. Parttime online bestie, fulltime aanwezig. Die combinatie is mijn geheime wapen: ik zie niet alleen wát er wringt, ik weet ook hóe je het fixt. Ik hou van roze, Crocs en discoballen, en van mensen die gewoon gaan.</p>
       <a class="link-arrow mt-s" href="/over-wiet/">Meer over Wiet <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </div>

@@ -356,7 +356,7 @@ body.menu-open { overflow: hidden; }
 }
 .card-blush .pill { background: var(--white); }
 .price { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
-.price small { font-size: 0.9rem; font-weight: 600; letter-spacing: 0; color: var(--muted); margin-left: 4px; }
+.price small { font-size: 0.9rem; font-weight: 600; letter-spacing: 0; color: var(--muted); }
 
 .num {
   display: inline-grid; place-content: center; width: 46px; height: 46px; border-radius: 50%;
