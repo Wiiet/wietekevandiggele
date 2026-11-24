@@ -216,6 +216,9 @@ p, li { text-wrap: pretty; }
 .nav-toggle[aria-expanded="true"] .nav-toggle-lines::after { top: 5px; transform: rotate(-45deg); }
 
 @media (max-width: 860px) {
+  /* Geen blur op mobiel: een backdrop-filter maakt de header de 'doos' van het vaste menu,
+     waardoor het menu maar een paar pixels hoog werd in plaats van het hele scherm. */
+  .js .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--zacht); }
   .js .nav-toggle { display: inline-flex; }
   .js .nav {
     position: fixed; inset: 72px 0 0 0; z-index: 49;
