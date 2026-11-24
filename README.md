@@ -13,7 +13,7 @@ De site is gebouwd met [Eleventy](https://www.11ty.dev/). Dat maakt van de besta
 | Producten in Wiet's Shop | `src/_data/shop.js` (de affiliate-links staan in `src/_data/affiliate.json`) |
 | Menu | `src/_data/nav.js` |
 | Teksten op een pagina | `src/<pagina>.njk`, bijvoorbeeld `src/samenwerken.njk` |
-| Kleuren, lettertype, opmaak | `src/assets/css/site.css` (kleuren staan bovenaan) |
+| Kleuren, lettertype, opmaak | `src/assets/css/site.css` (merkkleuren bovenaan, welke kleur op welk vlak onderaan bij "Vlakken") |
 | Foto's | `src/assets/img/` (WebP, in twee formaten) |
 
 Je kunt een bestand direct op GitHub aanpassen (potloodje rechtsboven), of het aan Claude vragen.
