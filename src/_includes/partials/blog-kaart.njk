@@ -1,0 +1,8 @@
+<article class="card blog-card">
+  <p class="small muted mb-0"><time datetime="{{ post.date | isoDate }}">{{ post.date | datumNL }}</time></p>
+  <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+  <p>{{ post.data.description }}</p>
+  <div class="card-foot">
+    <a class="link-arrow" href="{{ post.url }}" aria-hidden="true" tabindex="-1">Lees verder <span class="arrow">→</span></a>
+  </div>
+</article>

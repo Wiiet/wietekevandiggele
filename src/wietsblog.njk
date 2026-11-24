@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+permalink: /wietsblog/
+title: "Wiet's Blog | Over ondernemen, VA's en business-dips"
+ogTitle: "Wiet's Blog"
+description: "Blogs van Wieteke van Diggele over ondernemen, Virtual Assistants, business-dips en gewoon jezelf blijven. Recht voor z'n raap, met een knipoog."
+---
+
+<section class="hero" style="padding-bottom: clamp(40px, 6vw, 72px)">
+  <div class="wrap">
+    <p class="eyebrow">Wiet's Blog</p>
+    <h1>Wiet schrijft <span class="mark">er wat van.</span></h1>
+    <p class="lead mb-0">Over ondernemen, Virtual Assistants, business-dips en gewoon jezelf blijven.</p>
+  </div>
+</section>
+
+<section class="section bg-blush">
+  <div class="wrap">
+    <div class="cards cards-3">
+      {% for post in collections.blog | reverse %}{% include "partials/blog-kaart.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>

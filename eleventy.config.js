@@ -14,6 +14,7 @@ const images = {
   "wiet-tule": { widths: [1024], ratio: 663 / 1024 },
   "kop-van-wiet": { widths: [480, 960], ratio: 1398 / 1920 },
   "wiet-avatar": { widths: [320], ratio: 1 },
+  "sterrenhemel": { widths: [640, 1100], ratio: 2560 / 1920 },
 };
 
 export default function (eleventyConfig) {
@@ -43,6 +44,18 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));
+
+  // "9 maart 2026"
+  const maanden = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+  eleventyConfig.addFilter("datumNL", (d) => {
+    const x = new Date(d);
+    return `${x.getUTCDate()} ${maanden[x.getUTCMonth()]} ${x.getUTCFullYear()}`;
+  });
+
+  // De nieuwste blogs, zonder de blog waar je nu op staat
+  eleventyConfig.addFilter("andereBlogs", (posts, url, n = 3) =>
+    (posts || []).filter((p) => p.url !== url).slice(-n).reverse()
+  );
 
   return {
     dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },

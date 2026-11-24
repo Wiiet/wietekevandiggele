@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<section class="hero hero-post">
+  <div class="wrap">
+    <p class="eyebrow"><a href="/wietsblog/">Wiet's Blog</a> · <time datetime="{{ page.date | isoDate }}">{{ page.date | datumNL }}</time></p>
+    <h1>{{ title }}</h1>
+    {% if subtitle %}<p class="lead mb-0">{{ subtitle }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <article class="post-body">
+      {{ content | safe }}
+    </article>
+    <p class="post-terug"><a class="link-arrow" href="/wietsblog/"><span class="arrow" aria-hidden="true">←</span> Alle blogs</a></p>
+  </div>
+</section>
+
+{% set meer = collections.blog | andereBlogs(page.url) %}
+{% if meer.length %}
+<section class="section-tight bg-blush">
+  <div class="wrap">
+    <h2 class="blog-meer-kop">Lees ook</h2>
+    <div class="cards cards-3 mt-m">
+      {% for post in meer %}{% include "partials/blog-kaart.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -551,6 +551,30 @@ body.menu-open { overflow: hidden; }
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgba(58, 21, 48, 0.15); font-size: 0.88rem; color: var(--s-muted); }
 .footer-bottom ul { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
+/* ---------- Blog ---------- */
+.hero-post h1 { font-size: clamp(2.1rem, 1.3rem + 2.6vw, 3.6rem); max-width: 24ch; }
+.hero-post .lead { max-width: 52ch; }
+.eyebrow a { color: inherit; text-underline-offset: 3px; }
+.post-body { max-width: 68ch; margin-inline: auto; }
+.post-body > :first-child { margin-top: 0; }
+.post-body h2 { font-size: clamp(1.55rem, 1.2rem + 1.2vw, 2.1rem); letter-spacing: -0.02em; margin: 1.8em 0 0.5em; }
+.post-body h3 { font-size: clamp(1.2rem, 1.1rem + 0.4vw, 1.4rem); letter-spacing: -0.01em; margin: 1.5em 0 0.4em; }
+.post-body ul, .post-body ol { padding-left: 1.3em; margin-bottom: 1.2em; }
+.post-body li { margin-bottom: 0.35em; }
+.post-body li::marker { color: var(--roze); }
+.post-body a:not(.btn) { color: var(--s-link); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.post-terug { max-width: 68ch; margin: clamp(40px, 6vw, 64px) auto 0; }
+.blog-card h3 { font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); line-height: 1.15; }
+.blog-card h3 a { color: inherit; text-decoration: none; }
+.blog-card h3 a:hover { text-decoration: underline; text-decoration-color: var(--roze); text-decoration-thickness: 3px; }
+.blog-meer-kop { font-size: clamp(1.8rem, 1.3rem + 1.8vw, 2.6rem); }
+
+.steps-mini { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; }
+.steps-mini li::marker { color: var(--roze); font-weight: 800; }
+.steps-mini a { color: var(--s-link); text-underline-offset: 3px; }
+/* Rustig: geen felle stickerschaduw op de rouw-pagina */
+.rouw-foto { max-width: 460px; width: 100%; margin-inline: auto; aspect-ratio: 3 / 4; box-shadow: 0 24px 50px -28px rgba(58, 21, 48, 0.55); }
+
 /* ---------- 404 ---------- */
 .notfound { min-height: 60vh; display: grid; place-content: center; text-align: center; }
 

@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }}</title>
+  <title>{{ title }}{% if tags and 'blog' in tags %} | Wiet's Blog{% endif %}</title>
   <meta name="description" content="{{ description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% if noindex %}<meta name="robots" content="noindex">{% endif %}
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:site_name" content="Wieteke van Diggele">
   <meta property="og:title" content="{{ ogTitle or title }}">
