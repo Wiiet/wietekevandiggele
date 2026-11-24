@@ -43,7 +43,7 @@ footerLead: "Vul het formulier in of mail me je vraag. Dan ga ik vissen."
   </div>
 </section>
 
-<section class="section" id="hoe">
+<section class="section bg-disco" id="hoe">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Hoe het werkt</p>
@@ -69,21 +69,6 @@ footerLead: "Vul het formulier in of mail me je vraag. Dan ga ik vissen."
     <div class="btn-row mt-m">
       <a class="btn" href="{{ site.links.matchmakingForm }}" rel="noopener">Match mij ook <span class="arrow" aria-hidden="true">→</span></a>
       <span class="muted">{{ site.prices.matchmaking }} ex btw</span>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-disco">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Zij lieten zich matchen</p>
-      <h2>Hysterisch, retesnel <span class="mark">en bloedserieus.</span></h2>
-    </div>
-    <div class="quotes quotes-2">
-      {% set r = reviews.noortje %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.rosanne %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.hysterisch %}{% set useShort = false %}{% include "partials/quote.njk" %}
-      {% set r = reviews.match %}{% set useShort = false %}{% include "partials/quote.njk" %}
     </div>
   </div>
 </section>

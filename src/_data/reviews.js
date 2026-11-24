@@ -1,3 +1,5 @@
+// Let op: reviews staan op dit moment nergens op de site, Wiet wilde ze eraf.
+// Ze blijven hier bewaard voor als ze ooit terugkomen.
 // Reviews, letterlijk overgenomen uit de screenshots op de oude site.
 // 'short' = een letterlijk fragment voor kleine blokken.
 export default {
