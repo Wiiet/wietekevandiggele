@@ -1,6 +1,15 @@
 // Wiet's Shop. De links (met affiliate-codes) staan in affiliate.json.
 export default [
   {
+    title: "Sport en beweging",
+    items: [
+      { name: "Olfé sportkleding", link: "olfe", shop: "Olfé", code: "WIETEKE15",
+        text: "Waanzinnige sportkleding die níet afzakt. Dus geen gesjor en gehijs halverwege je workout, gewoon lekker bewegen." },
+      { name: "Moov Walk Plus", link: "moov", shop: "Moov", code: "WIETEKE",
+        text: "Van Moov heb ik de Moov Walk Plus, en ik ben fan." },
+    ],
+  },
+  {
     title: "Huishouden",
     items: [
       { name: "Robotstofzuiger met dweil", link: "dreame", img: "robotstofzuiger", shop: "Bol",

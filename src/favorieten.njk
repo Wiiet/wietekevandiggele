@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 permalink: /favorieten/
 title: "Wiet's Shop | Spullen waar ik heul gelukkig van word"
-description: "Wiet's favoriete spullen voor huishouden, keuken en je bedrijf. Alles zelf gebruikt en eerlijk beoordeeld, met kortingscodes."
+description: "Wiet's favoriete spullen voor sport, huishouden, keuken en je bedrijf. Alles zelf gebruikt en eerlijk beoordeeld, met kortingscodes."
 footerTitle: "Jouw product hier?"
 footerLead: "Heb je iets waar ik heul gelukkig van zou kunnen worden? Laat me het testen. Eerlijk, zoals altijd."
 footerMailLabel: "Mail over een samenwerking"
@@ -31,6 +31,7 @@ footerMailSubject: "Samenwerking met Wiet"
         <div class="product-body">
           <h3>{{ item.name }}</h3>
           <p>{{ item.text }}</p>
+          {% if item.code %}<p class="product-code">Kortingscode <span class="code">{{ item.code }}</span></p>{% endif %}
           <a class="link-arrow" href="{{ affiliate[item.link] }}" rel="sponsored noopener">Bekijk bij {{ item.shop }} <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </article>

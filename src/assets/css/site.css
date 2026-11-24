@@ -480,6 +480,7 @@ body.menu-open { overflow: hidden; }
 .product-body h3 { font-size: 1.3rem; margin: 0; }
 .product-body p { margin: 0; color: var(--s-soft); }
 .product-body .link-arrow { margin-top: auto; align-self: flex-start; }
+.product-body .product-code { font-size: 0.95rem; font-weight: 600; color: var(--s-fg); }
 .code { display: inline-block; padding: 1px 9px; border-radius: 8px; background: var(--white); color: var(--roze-diep); border: 1.5px dashed var(--roze); font-weight: 800; letter-spacing: 0.06em; font-size: 0.9em; }
 
 /* ---------- Linkpagina (bio) ---------- */
