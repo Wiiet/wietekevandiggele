@@ -476,6 +476,10 @@ body.menu-open { overflow: hidden; }
 .product { display: flex; flex-direction: column; background: var(--white); border-radius: var(--radius); border: 2px solid var(--kaart-rand); overflow: hidden; box-shadow: var(--knal) var(--knal) 0 var(--kaart-schaduw); }
 .product-img { aspect-ratio: 4 / 3; background: var(--white); padding: 22px; display: grid; place-items: center; border-bottom: 1px solid var(--line); }
 .product-img img { max-height: 100%; width: auto; object-fit: contain; }
+.product-img--staand { aspect-ratio: 4 / 5; }
+/* Een echte foto (geen productfoto): vult het hele vlak */
+.product-img--foto { padding: 0; }
+.product-img--foto img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
 .product-body { display: flex; flex-direction: column; gap: 12px; padding: 24px 26px 28px; flex: 1; }
 .product-body h3 { font-size: 1.3rem; margin: 0; }
 .product-body p { margin: 0; color: var(--s-soft); }

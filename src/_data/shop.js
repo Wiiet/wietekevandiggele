@@ -2,11 +2,14 @@
 export default [
   {
     title: "Sport en beweging",
+    staand: true, // staande foto's in deze categorie
     items: [
-      { name: "Olfé sportkleding", link: "olfe", shop: "Olfé", code: "WIETEKE15",
+      { name: "Olfé sportkleding", link: "olfe", img: "olfe", foto: true, shop: "Olfé", code: "WIETEKE15",
+        alt: "Wiet maakt een spiegelselfie in haar Olfé-sportkleding, met roze sportschoenen",
         text: "Waanzinnige sportkleding die níet afzakt. Dus geen gesjor en gehijs halverwege je workout, gewoon lekker bewegen." },
-      { name: "Moov Walk Plus", link: "moov", shop: "Moov", code: "WIETEKE",
-        text: "Van Moov heb ik de Moov Walk Plus, en ik ben fan." },
+      { name: "Moov Walk Plus", link: "moov", img: "moov", shop: "Moov", code: "WIETEKE",
+        alt: "De Moov Walk Plus: een loopband met handgrepen en een helling",
+        text: "Mijn loopband, en ik ben fan. Hij is heel stevig, ik heb de vrijheid om te lopen wanneer ík wil, en met de helling wandel ik ook nog eens lekker stevig door." },
     ],
   },
   {
