@@ -41,7 +41,8 @@ export default {
     instagramHandle: "@wietekevandiggele",
     linkedin: "https://www.linkedin.com/in/wietekevandiggele/",
     facebook: "https://www.facebook.com/wietekevdiggele",
-    tiktok: "", // TODO: TikTok-link invullen, dan verschijnt hij vanzelf in de footer
+    tiktok: "https://www.tiktok.com/@wietvindterwatvan",
+    tiktokHandle: "@wietvindterwatvan",
   },
 
   // Live Instagram-feed: vul hier de URL van je JSON-feed in (bijv. van Behold.so).
