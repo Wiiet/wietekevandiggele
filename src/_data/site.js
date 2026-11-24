@@ -11,7 +11,7 @@ export default {
 
   // Cijfers voor merken. Werk ze bij en zet de peildatum erbij.
   stats: {
-    followers: "17.349",
+    followers: "17.300+", // afgerond naar beneden, zodat het blijft kloppen terwijl Wiet groeit
     views30d: "2,4 mln",
     storyViews: "4.000+",
     jarenOndernemer: "7",
