@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+permalink: /zoom/
+title: "Zoomen met Wiet"
+description: "De Zoom-room van Wiet. Klik op de knop en je zit zo bij haar."
+noindex: true
+hideFooterCta: true
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Zoomen met Wiet</p>
+      <h1>Wij gaan <span class="mark">zoomen!</span></h1>
+      <p class="lead">Lekker zoomen met Wiet. Klik op de knop en je zit zo bij me in de Zoom-room.</p>
+      <div class="btn-row">
+        <a class="btn" href="{{ site.links.zoom }}">Naar de Zoom-room <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <p class="btn-note">Werkt de knop niet? Open Zoom en vul meeting-ID {{ site.links.zoomId }} in.</p>
+    </div>
+    <div class="photo-stack">
+      <div class="photo">
+        {% img "wiet-lach", "Wiet lacht in de camera, met een rood jasje en roze veren", "(min-width: 960px) 42vw, 92vw", "eager" %}
+      </div>
+    </div>
+  </div>
+</section>

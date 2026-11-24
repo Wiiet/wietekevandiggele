@@ -31,6 +31,9 @@ export default {
     matchmakingForm: "https://forms.gle/reES8eCsu8rb3NNd6",
     dipTest: "https://forms.gle/FLyaXEQy8gXZob886",
     newsletter: "https://wietekevandiggele.activehosted.com/f/10",
+    // Wiets vaste Zoom-room (de pagina /zoom/ linkt hierheen)
+    zoom: "https://us06web.zoom.us/j/7637392161",
+    zoomId: "763 739 2161",
   },
 
   socials: {
