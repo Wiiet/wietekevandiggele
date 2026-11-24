@@ -575,6 +575,24 @@ body.menu-open { overflow: hidden; }
 /* Rustig: geen felle stickerschaduw op de rouw-pagina */
 .rouw-foto { max-width: 460px; width: 100%; margin-inline: auto; aspect-ratio: 3 / 4; box-shadow: 0 24px 50px -28px rgba(58, 21, 48, 0.55); }
 
+/* ---------- Tabellen (privacyverklaring) ---------- */
+.tabel { overflow-x: auto; margin: 1.2em 0 1.8em; border: 2px solid var(--zacht); border-radius: var(--radius-sm); }
+.tabel:focus-visible { outline-offset: 2px; }
+.tabel table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 0.95rem; line-height: 1.45; }
+.tabel th, .tabel td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.tabel thead th { background: var(--blush); font-weight: 700; }
+.tabel tbody tr:last-child td { border-bottom: 0; }
+/* Op een telefoon: elke rij als kaartje, met het kopje boven elke waarde */
+@media (max-width: 640px) {
+  .tabel { border: 0; border-radius: 0; overflow: visible; }
+  .tabel table { min-width: 0; }
+  .tabel thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .tabel tr { display: block; margin-bottom: 12px; padding: 6px 0; border: 2px solid var(--zacht); border-radius: var(--radius-sm); }
+  .tabel td { display: block; padding: 6px 16px; border: 0; }
+  .tabel td:first-child { font-weight: 700; }
+  .tabel td::before { content: attr(data-label); display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--roze-diep); }
+}
+
 /* ---------- 404 ---------- */
 .notfound { min-height: 60vh; display: grid; place-content: center; text-align: center; }
 
