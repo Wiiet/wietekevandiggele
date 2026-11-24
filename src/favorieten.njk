@@ -26,7 +26,7 @@ footerMailSubject: "Samenwerking met Wiet"
       {% for item in group.items %}
       <article class="product">
         {% if item.img %}
-        <div class="product-img{% if group.staand %} product-img--staand{% endif %}{% if item.foto %} product-img--foto{% endif %}"><img src="/assets/img/shop/{{ item.img }}.webp" alt="{{ item.alt or item.name }}" loading="lazy" decoding="async"></div>
+        <div class="product-img{% if group.staand %} product-img--staand{% endif %}{% if item.foto %} product-img--foto{% endif %}{% if item.logo %} product-img--logo{% endif %}"><img src="/assets/img/shop/{{ item.img }}.webp" alt="{{ item.alt or item.name }}" loading="lazy" decoding="async"></div>
         {% endif %}
         <div class="product-body">
           <h3>{{ item.name }}</h3>
