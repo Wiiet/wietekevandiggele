@@ -27,6 +27,8 @@ footerMailSubject: "Samenwerking met Wiet"
       <article class="product">
         {% if item.img %}
         <div class="product-img{% if group.staand %} product-img--staand{% endif %}{% if item.foto %} product-img--foto{% endif %}{% if item.logo %} product-img--logo{% endif %}"><img src="/assets/img/shop/{{ item.img }}.webp" alt="{{ item.alt or item.name }}" loading="lazy" decoding="async"></div>
+        {% else %}
+        <div class="product-img product-img--leeg" aria-hidden="true"><img src="/assets/img/discobal-groot.svg" alt="" width="280" height="280" loading="lazy" decoding="async"><span>{{ item.shop }}</span></div>
         {% endif %}
         <div class="product-body">
           <h3>{{ item.name }}</h3>

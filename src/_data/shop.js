@@ -24,6 +24,8 @@ export default [
         text: "Zwier je liever zelf door het leven? Dan is deze rakker je nieuwe bestie. Dweilen en zuigen met stevige druk. Zo schoon!" },
       { name: "Achaté steelstofzuiger", link: "achate", img: "achate", shop: "Achaté", code: "WIETEKE",
         text: "Ik had zo'n overpriced steelstofzuigertje (die met een D), maar dat werd hier een dure kruimeldief. Achaté vroeg of ik deze wilde testen. En wat denk je? Zóveel beter. Met code WIETEKE krijg je €5 extra korting." },
+      { name: "Achaté elektrische dweil", link: "achate", shop: "Achaté", code: "WIETEKE",
+        text: "Werkt WAANZINNIG voor de snelle schoonmaak. Geen volle emmers, gewoon water in het ding en GAAN." },
       { name: "Wanddroogrek", link: "droogrek", img: "droogrek", shop: "Bol",
         text: "Ik heb er vier hangen en het is me toch een heerlijkheid. Nooit meer gedoe met wasrekken in de weg. Inklappen en klaar, en er kan een volle wasmand aan." },
       { name: "Vliegenzakken", link: "vliegenval", img: "vliegenval", shop: "Bol",
