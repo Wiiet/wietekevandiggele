@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: "Wieteke van Diggele | Online bestie, business-adviseur en VA"
 ogTitle: "Ik ben Wiet. En ik vind er wat van."
-description: "Ik ben Wiet: je online bestie en business-bestie voor ondernemers. Bloedje eerlijke reviews voor merken, Aanslingercalls, VA-werk en VA-matchmaking."
+description: "Ik ben Wiet: online bestie voor 17.000+ volgers en business-bestie voor ondernemers. Bloedje eerlijke reviews voor merken, Aanslingercalls, VA-werk en VA-matchmaking."
 schema:
   "@context": "https://schema.org"
   "@type": "Person"
@@ -54,7 +54,20 @@ schema:
   </div>
 </div>
 
-<section class="section">
+<section class="section-tight">
+  <div class="wrap">
+    <h2 class="visually-hidden">Wiet in cijfers</h2>
+    <div class="stats">
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.followers }}</span> <span class="stat-label">volgers op Instagram</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.views30d }}</span> <span class="stat-label">views per 30 dagen</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.storyViews }}</span> <span class="stat-label">kijkers per story</span></p>
+      <p class="stat mb-0"><span class="stat-num">{{ site.stats.jarenOndernemer }} jaar</span> <span class="stat-label">ondernemer</span></p>
+    </div>
+    <p class="stats-note">Peildatum: {{ site.stats.asOf }}.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Kies je deur</p>
